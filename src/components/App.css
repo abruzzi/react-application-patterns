@@ -7,6 +7,10 @@ body {
   background: #fefefe;
 }
 
+#root {
+  background: bisque;
+}
+
 :root {
   --text-color: #333;
 }
@@ -17,7 +21,10 @@ a {
 
 .app {
   width: 720px;
-  margin: 1rem auto;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  background: white;
+  min-height: 100vh;
   font-family: 'Roboto Slab', serif;
 }
 

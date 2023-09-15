@@ -1,29 +1,35 @@
-import React, { useContext } from "react";
-import { FeatureToggleContext } from "./FeatureToggleProvider";
-import { MenuListOld } from "./MenuListOld";
-import MenuListNew from "./MenuListNew";
-import ErrorBoundary from "./ErrorBoundary";
+import React from "react";
+import type { MenuItem as MenuItemType } from "../types";
 import { MenuByCategory } from "../types";
+import { MenuItem } from "./MenuItem";
 
-type MenuListProps = {
+export const MenuList = ({
+  menusByCategory,
+}: {
   menusByCategory: MenuByCategory;
-};
-
-const ErrorPage = () => {
-  return (
-    <div className="error-page">Something went wrong</div>
-  );
-};
-export const MenuList = (props: MenuListProps) => {
-  const { isFeatureOn } = useContext(FeatureToggleContext);
+}) => {
+  const handleClick = (item: MenuItemType) => {
+    console.log(`${item.name}`);
+  };
 
   return (
-    <ErrorBoundary fallback={<ErrorPage />}>
-      {isFeatureOn("newMenuList") ? (
-        <MenuListNew {...props} />
-      ) : (
-        <MenuListOld {...props} />
-      )}
-    </ErrorBoundary>
+    <main className="menu-list">
+      {Object.keys(menusByCategory).map((category) => (
+        <section key={category}>
+          <h2 id={category.toLowerCase()}>{category}</h2>
+          <ul>
+            {menusByCategory[category as keyof typeof menusByCategory].map(
+              (item: MenuItemType) => (
+                <MenuItem
+                  key={item.name}
+                  item={item}
+                  onItemClick={handleClick}
+                />
+              )
+            )}
+          </ul>
+        </section>
+      ))}
+    </main>
   );
 };

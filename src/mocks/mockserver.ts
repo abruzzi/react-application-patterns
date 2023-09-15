@@ -1,4 +1,3 @@
-// src/mirageServer.js
 import { createServer } from "miragejs";
 import menus from "./menu.json";
 import toggles from "./toggles.json";

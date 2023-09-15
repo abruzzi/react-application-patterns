@@ -1,0 +1,220 @@
+{
+  "Starter": [
+    {
+      "id": "1",
+      "name": "Tomato Soup",
+      "description": "A warm and hearty blend of tomatoes, garlic, and herbs.",
+      "category": "Starter",
+      "nutritionalInfo": "Calories: 90, Protein: 2g, Fat: 1g",
+      "ingredients": [
+        "Tomatoes",
+        "Garlic",
+        "Herbs"
+      ],
+      "dietaryLabels": [
+        "Vegan",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Caesar Salad",
+      "description": "Romaine lettuce, croutons, and Parmesan cheese tossed in Caesar dressing.",
+      "category": "Starter",
+      "nutritionalInfo": "Calories: 150, Protein: 6g, Fat: 10g",
+      "ingredients": [
+        "Romaine Lettuce",
+        "Croutons",
+        "Parmesan Cheese",
+        "Caesar Dressing"
+      ],
+      "dietaryLabels": [
+        "Vegetarian"
+      ]
+    }
+  ],
+  "Main": [
+    {
+      "id": "3",
+      "name": "Grilled Chicken",
+      "description": "Succulent chicken breast grilled to perfection, served with seasonal vegetables.",
+      "category": "Main",
+      "nutritionalInfo": "Calories: 260, Protein: 30g, Fat: 6g",
+      "ingredients": [
+        "Chicken Breast",
+        "Seasonal Vegetables"
+      ],
+      "dietaryLabels": [
+        "High-Protein"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Spaghetti Bolognese",
+      "description": "Classic Italian pasta dish with a rich meat sauce.",
+      "category": "Main",
+      "nutritionalInfo": "Calories: 400, Protein: 20g, Fat: 10g",
+      "ingredients": [
+        "Spaghetti",
+        "Ground Beef",
+        "Tomato Sauce"
+      ],
+      "dietaryLabels": []
+    },
+    {
+      "id": "11",
+      "name": "Beef Stroganoff",
+      "description": "Tender strips of beef in a creamy mushroom sauce, served over rice.",
+      "category": "Main",
+      "nutritionalInfo": "Calories: 350, Protein: 25g, Fat: 15g",
+      "ingredients": [
+        "Beef Strips",
+        "Mushrooms",
+        "Cream",
+        "Rice"
+      ],
+      "dietaryLabels": [
+        "High-Protein"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Vegetable Stir-Fry",
+      "description": "Seasonal vegetables stir-fried with a tangy sauce, served over steamed rice.",
+      "category": "Main",
+      "nutritionalInfo": "Calories: 200, Protein: 5g, Fat: 5g",
+      "ingredients": [
+        "Seasonal Vegetables",
+        "Tangy Sauce",
+        "Steamed Rice"
+      ],
+      "dietaryLabels": [
+        "Vegan"
+      ]
+    }
+  ],
+  "Drink": [
+    {
+      "id": "5",
+      "name": "Smoothie",
+      "description": "A blend of fresh fruits, yogurt, and a touch of honey.",
+      "category": "Drink",
+      "nutritionalInfo": "Calories: 180, Protein: 5g, Fat: 2g",
+      "ingredients": [
+        "Fresh Fruits",
+        "Yogurt",
+        "Honey"
+      ],
+      "dietaryLabels": [
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Iced Latte",
+      "description": "A refreshing mix of espresso, milk, and ice.",
+      "category": "Drink",
+      "nutritionalInfo": "Calories: 100, Protein: 3g, Fat: 4g",
+      "ingredients": [
+        "Espresso",
+        "Milk",
+        "Ice"
+      ],
+      "dietaryLabels": [
+        "Vegetarian"
+      ]
+    }
+  ],
+  "Snack": [
+    {
+      "id": "7",
+      "name": "Nachos",
+      "description": "Crispy tortilla chips topped with melted cheese, jalapeños, and sour cream.",
+      "category": "Snack",
+      "nutritionalInfo": "Calories: 450, Protein: 8g, Fat: 25g",
+      "ingredients": [
+        "Tortilla Chips",
+        "Melted Cheese",
+        "Jalapeños",
+        "Sour Cream"
+      ],
+      "dietaryLabels": []
+    },
+    {
+      "id": "8",
+      "name": "Spring Rolls",
+      "description": "Fried rolls filled with vegetables, served with sweet chili sauce.",
+      "category": "Snack",
+      "nutritionalInfo": "Calories: 200, Protein: 2g, Fat: 10g",
+      "ingredients": [
+        "Vegetables",
+        "Spring Roll Wrappers",
+        "Sweet Chili Sauce"
+      ],
+      "dietaryLabels": [
+        "Vegan"
+      ]
+    }
+  ],
+  "Dessert": [
+    {
+      "id": "9",
+      "name": "Mint Sorbet",
+      "description": "A refreshing palate cleanser made from mint leaves and sugar.",
+      "category": "Dessert",
+      "nutritionalInfo": "Calories: 100, Protein: 0g, Fat: 0g",
+      "ingredients": [
+        "Mint Leaves",
+        "Sugar"
+      ],
+      "dietaryLabels": [
+        "Vegan",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Chocolate Mousse",
+      "description": "A light and fluffy chocolate delight.",
+      "category": "Dessert",
+      "nutritionalInfo": "Calories: 250, Protein: 3g, Fat: 15g",
+      "ingredients": [
+        "Chocolate",
+        "Whipping Cream"
+      ],
+      "dietaryLabels": [
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Tiramisu",
+      "description": "Classic Italian dessert featuring layers of coffee-soaked ladyfingers and a creamy mascarpone filling.",
+      "category": "Dessert",
+      "nutritionalInfo": "Calories: 350, Protein: 6g, Fat: 20g",
+      "ingredients": [
+        "Ladyfingers",
+        "Coffee",
+        "Mascarpone"
+      ],
+      "dietaryLabels": [
+        "Vegetarian"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Apple Crumble",
+      "description": "Warm spiced apples topped with a crumbly oat mixture, served with vanilla ice cream.",
+      "category": "Dessert",
+      "nutritionalInfo": "Calories: 300, Protein: 2g, Fat: 10g",
+      "ingredients": [
+        "Apples",
+        "Oats",
+        "Spices"
+      ],
+      "dietaryLabels": [
+        "Vegetarian"
+      ]
+    }
+  ]
+}
