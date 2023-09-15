@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #fefefe;
+}
+
+:root {
+  --text-color: #333;
+}
+
+a {
+  color: var(--text-color);
+}
+
+.app {
+  width: 720px;
+  margin: 1rem auto;
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  margin: 2rem 0;
+  color: chocolate;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+}
+
+.navigator {
+  position: fixed;
+  width: 150px;
+  background: #efefef;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navigator ul li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.navigator ul li:hover {
+  background: white;
+}
+
+.error-page {
+  margin-left: 200px;
+  font-size: 1.5rem;
+  color: red;
+}
+
+.menu-list {
+  margin-left: 200px;
+}
+.menu-list section {
+  margin: 0 0 1rem 0;
+}
+
+.menu-list h2 {
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+
+.menu-list ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.menu-list ul li {
+  flex: 1;
+  flex-basis: calc(50% - 4rem);
+  list-style: none;
+  border-radius: 8px;
+  border: 1px solid #efefef;
+  padding: 1rem;
+  background: white;
+}
+
+.menu-list ul li h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.menu-list ul li p {
+  color: #666;
+  margin: 0 0 2.5rem 0;
+}
+
+.menu-list li {
+  position: relative;
+}
+
+.menu-list button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+
+  padding: 0.2rem 0.5rem;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "name": "Tomato Soup",
+    "description": "A warm and hearty blend of tomatoes, garlic, and herbs.",
+    "category": "Starter"
+  },
+  {
+    "id": "2",
+    "name": "Caesar Salad",
+    "description": "Romaine lettuce, croutons, and Parmesan cheese tossed in Caesar dressing.",
+    "category": "Starter"
+  },
+  {
+    "id": "3",
+    "name": "Grilled Chicken",
+    "description": "Succulent chicken breast grilled to perfection, served with seasonal vegetables.",
+    "category": "Main"
+  },
+  {
+    "id": "4",
+    "name": "Spaghetti Bolognese",
+    "description": "Classic Italian pasta dish with a rich meat sauce.",
+    "category": "Main"
+  },
+  {
+    "id": "11",
+    "name": "Beef Stroganoff",
+    "description": "Tender strips of beef in a creamy mushroom sauce, served over rice.",
+    "category": "Main"
+  },
+  {
+    "id": "12",
+    "name": "Vegetable Stir-Fry",
+    "description": "Seasonal vegetables stir-fried with a tangy sauce, served over steamed rice.",
+    "category": "Main"
+  },
+  {
+    "id": "5",
+    "name": "Smoothie",
+    "description": "A blend of fresh fruits, yogurt, and a touch of honey.",
+    "category": "Drink"
+  },
+  {
+    "id": "6",
+    "name": "Iced Latte",
+    "description": "A refreshing mix of espresso, milk, and ice.",
+    "category": "Drink"
+  },
+  {
+    "id": "7",
+    "name": "Nachos",
+    "description": "Crispy tortilla chips topped with melted cheese, jalapeños, and sour cream.",
+    "category": "Snack"
+  },
+  {
+    "id": "8",
+    "name": "Spring Rolls",
+    "description": "Fried rolls filled with vegetables, served with sweet chili sauce.",
+    "category": "Snack"
+  },
+  {
+    "id": "9",
+    "name": "Mint Sorbet",
+    "description": "A refreshing palate cleanser made from mint leaves and sugar.",
+    "category": "Dessert"
+  },
+  {
+    "id": "10",
+    "name": "Chocolate Mousse",
+    "description": "A light and fluffy chocolate delight.",
+    "category": "Dessert"
+  },
+  {
+    "id": "13",
+    "name": "Tiramisu",
+    "description": "Classic Italian dessert featuring layers of coffee-soaked ladyfingers and a creamy mascarpone filling.",
+    "category": "Dessert"
+  },
+  {
+    "id": "14",
+    "name": "Apple Crumble",
+    "description": "Warm spiced apples topped with a crumbly oat mixture, served with vanilla ice cream.",
+    "category": "Dessert"
+  }
+]
