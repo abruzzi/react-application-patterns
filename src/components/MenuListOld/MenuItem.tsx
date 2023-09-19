@@ -1,5 +1,5 @@
 import React from "react";
-import { MenuItem as MenuItemType } from "../types";
+import { MenuItem as MenuItemType } from "../../types";
 
 export const MenuItem = ({
   item,

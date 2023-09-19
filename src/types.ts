@@ -5,6 +5,7 @@ export type MenuItem = {
   name: string;
   description: string;
   category: MenuItemCategory;
+  nutritionalInfo: string;
 };
 
 export type MenuByCategory = {

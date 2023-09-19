@@ -1,35 +1,17 @@
-import React from "react";
-import type { MenuItem as MenuItemType } from "../types";
 import { MenuByCategory } from "../types";
-import { MenuItem } from "./MenuItem";
+import { useToggles } from "../hooks/useToggles";
 
-export const MenuList = ({
-  menusByCategory,
-}: {
-  menusByCategory: MenuByCategory;
-}) => {
-  const handleClick = (item: MenuItemType) => {
-    console.log(`${item.name}`);
-  };
+import { MenuList as MenuListOld } from "./MenuListOld/MenuList";
+import { MenuList as MenuListNew } from "./MenuListNew/MenuList";
 
-  return (
-    <main className="menu-list">
-      {Object.keys(menusByCategory).map((category) => (
-        <section key={category}>
-          <h2 id={category.toLowerCase()}>{category}</h2>
-          <ul>
-            {menusByCategory[category as keyof typeof menusByCategory].map(
-              (item: MenuItemType) => (
-                <MenuItem
-                  key={item.name}
-                  item={item}
-                  onItemClick={handleClick}
-                />
-              )
-            )}
-          </ul>
-        </section>
-      ))}
-    </main>
+const MenuList = ({ menusByCategory }: { menusByCategory: MenuByCategory }) => {
+  const { isFeatureOn } = useToggles();
+
+  return isFeatureOn("newMenuList") ? (
+    <MenuListNew menusByCategory={menusByCategory} />
+  ) : (
+    <MenuListOld menusByCategory={menusByCategory} />
   );
 };
+
+export { MenuList };
