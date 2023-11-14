@@ -1,10 +1,17 @@
 import React, { createContext, useContext, useState } from "react";
+import { v4 as uuid } from "uuid";
+
+export type MessageType = {
+  id: string;
+  content: string;
+};
 
 export type NotificationType = {
-  messages: string[];
+  messages: MessageType[];
   addMessage: (message: string, level?: "information" | "error") => void;
   removeMessage: (message: string, level?: "information" | "error") => void;
 };
+
 export const NotificationContext = createContext<NotificationType>({
   messages: [],
   addMessage: (message: string) => {},
@@ -20,14 +27,14 @@ export const NotificationProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [messages, setMessages] = useState<string[]>([]);
+  const [messages, setMessages] = useState<MessageType[]>([]);
 
-  const removeMessage = (message: string) => {
-    setMessages(messages.filter((m) => m !== message));
+  const removeMessage = (id: string) => {
+    setMessages(messages.filter((m) => m.id !== id));
   };
 
   const addMessage = (message: string) => {
-    setMessages([message, ...messages]);
+    setMessages([{ id: uuid(), content: message }, ...messages]);
   };
 
   return (
