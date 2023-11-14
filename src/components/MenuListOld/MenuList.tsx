@@ -2,14 +2,17 @@ import React from "react";
 import type { MenuItem as MenuItemType } from "../../types";
 import { MenuByCategory } from "../../types";
 import { MenuItem } from "./MenuItem";
+import { useNotification } from "../Notification/NotificationContext";
 
 export const MenuList = ({
   menusByCategory,
 }: {
   menusByCategory: MenuByCategory;
 }) => {
+  const { addMessage } = useNotification();
+  
   const handleClick = (item: MenuItemType) => {
-    console.log(`${item.name}`);
+    addMessage(`${item.name}`);
   };
 
   return (

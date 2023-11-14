@@ -1,0 +1,33 @@
+.notificationContainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.notificationContainer ol li {
+  list-style: none;
+  margin: 0.5rem;
+  border-radius: 6px;
+  background: #333333;
+  color: white;
+  padding: 1rem;
+}
+
+.notificationItem {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.notificationItem button {
+  font-family: "Courier New", sans-serif;
+  font-size: 1.2rem;
+  appearance: none;
+  border: none;
+  background: transparent;
+  margin-left: auto;
+  color: white;
+  cursor: pointer;
+}
+
